@@ -14,7 +14,7 @@ body:
     attributes:
       label: "Valid Title"
       options:
-        - label: I have updated the title to accurately reflect the bug description. Example of a title: [Peer Review] | Reader View - Article landing page, Missing dynamic values
+        - label: "I have updated the title to accurately reflect the bug description. Example of a title: [Peer Review] | Reader View - Article landing page, Missing dynamic values"
           required: true
 
   - type: textarea
