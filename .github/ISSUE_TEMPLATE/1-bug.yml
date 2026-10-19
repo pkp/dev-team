@@ -17,19 +17,16 @@ body:
         - label: "I have updated the title to accurately reflect the bug description. Example of a title: [Peer Review] | Reader View - Article landing page, Missing dynamic values"
           required: true
 
-  - type: radio
+  - type: dropdown
     id: context-location
-    name: location context
-    label: location-context
-    description: Choose where the issue is focused
-    default: readerview
-    options:
-    - label: Reader Area
-      value: readerview
-    - label: Editorial Area
-      value: editorialview
-    - label: Other
-      value: other
+    attributes:
+      label: Location
+      description: Choose where the issue is focused
+      multiple: false
+      options:
+        - Reader Area
+        - Editorial Area
+        - Other
     validations:
       required: true
 
