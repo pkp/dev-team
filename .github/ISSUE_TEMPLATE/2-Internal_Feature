@@ -1,0 +1,92 @@
+name: "Feature / Task"
+description: Propose a change or new feature with clear, testable acceptance criteria.
+title: "[Area] Short description of the change"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in each section so a developer can build this and QA can test it without asking follow-up questions.
+        The **Acceptance Criteria** section is required: an issue without testable criteria is not ready for development.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "One or two sentences: what should change, and for whom?"
+      placeholder: "Authors should not see a submitted open review until an editor confirms it."
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: "Background"
+      description: "Why is this needed? Describe the current behaviour and the problem it causes. Link related issues, forum posts or PRs."
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: "Scope"
+      description: "What is included, and what is explicitly out of scope? Define any terms that could be read more than one way."
+      value: |
+        **In scope**
+        -
+
+        **Out of scope**
+        -
+
+        **Definitions** (optional)
+        -
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "Acceptance Criteria"
+      description: |
+        List each criterion as a checkbox. Each one must be testable: it should describe something QA can observe and mark as pass or fail.
+        Number them (AC-1, AC-2, ...) so they can be referenced in PRs and test results.
+        Cover the main behaviour, each user role affected, edge cases, and anything that must stay unchanged.
+      value: |
+        - [ ] **AC-1** Given <starting state>, when <action>, then <expected result>.
+        - [ ] **AC-2**
+        - [ ] **AC-3**
+
+        **Must stay unchanged**
+        - [ ]
+    validations:
+      required: true
+
+  - type: textarea
+    id: qa-notes
+    attributes:
+      label: "QA Test Notes"
+      description: "Setup needed to test this (users, roles, settings, data) and any scenarios QA should run in order."
+      value: |
+        **Setup**
+        1.
+
+        **Scenarios**
+        - [ ]
+    validations:
+      required: false
+
+  - type: textarea
+    id: technical-notes
+    attributes:
+      label: "Technical Notes"
+      description: "Optional guidance for the developer: likely files or components, constraints, or a suggested approach."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "Additional Information"
+      description: "Screenshots, mock-ups, links or anything else that helps."
+    validations:
+      required: false
